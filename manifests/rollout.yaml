@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/iuniod/ci_cd_lab:latest
+          image: ghcr.io/iuniod/ci_cd_lab@sha256:049c05d0cdc9945dc29e9f8bdc76d23cde4bf4ba33a7b0e2f0b75fc39f2508e8
           ports:
             - containerPort: 8080
           imagePullPolicy: Always

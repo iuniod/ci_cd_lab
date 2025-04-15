@@ -18,8 +18,10 @@ jobs:
       - name: Install dependences
         uses: go mod download
       - name: Run tests
-        run: go main_test.go
+        run: go test ../..
   compile:
+    needs: test
+    if: success
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
